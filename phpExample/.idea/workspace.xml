@@ -1,18 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e5140940-c4ac-4770-a4c6-6fc3c91539b7" name="Default" comment="Added jQuery">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/grid.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/html5shiv.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jquery-1.10.2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jquery-1.10.2.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/respond.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test.php" />
+    <list default="true" id="e5140940-c4ac-4770-a4c6-6fc3c91539b7" name="Default" comment="">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.php" afterPath="$PROJECT_DIR$/test.php" />
     </list>
     <ignored path="phpExample.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="e5140940-c4ac-4770-a4c6-6fc3c91539b7" time="1381933105471" ignored="false" />
+    <file path="/Dummy.txt" changelist="e5140940-c4ac-4770-a4c6-6fc3c91539b7" time="1381933203968" ignored="false" />
     <file path="/test.php" changelist="e5140940-c4ac-4770-a4c6-6fc3c91539b7" time="1381933173785" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,7 +42,7 @@
       <file leaf-file-name="test.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="129" column="7" selection-start="5218" selection-end="5218" vertical-scroll-proportion="0.87914693">
+            <state line="129" column="7" selection-start="5220" selection-end="5220" vertical-scroll-proportion="0.87914693">
               <folding>
                 <element signature="e#6#161#0" expanded="true" />
               </folding>
@@ -224,7 +219,11 @@
       <created>1381932238153</created>
       <updated>1381932238153</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added jQuery">
+      <created>1381933212859</created>
+      <updated>1381933212859</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -293,7 +292,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial setup" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added jQuery" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -308,6 +307,7 @@
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="Initial setup" />
+    <MESSAGE value="Added jQuery" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -351,7 +351,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="129" column="7" selection-start="5218" selection-end="5218" vertical-scroll-proportion="0.87914693">
+        <state line="129" column="7" selection-start="5220" selection-end="5220" vertical-scroll-proportion="0.87914693">
           <folding>
             <element signature="e#6#161#0" expanded="true" />
           </folding>
