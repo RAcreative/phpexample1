@@ -33,6 +33,26 @@
 
   <body>
 
+  <div class="navbar navbar-inverse">
+      <div class="container">
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Project name</a>
+          </div>
+          <div class="collapse navbar-collapse">
+              <ul class="nav navbar-nav">
+                  <li class="active"><a href="#">Home</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#contact">Contact</a></li>
+              </ul>
+          </div><!--/.nav-collapse -->
+      </div>
+  </div>
+
     <div class="container">
 
       <div class="page-header">
@@ -43,9 +63,18 @@
       <h3>Three equal columns</h3>
       <p>Get three equal-width columns <strong>starting at desktops and scaling to large desktops</strong>. On mobile devices, tablets and below, the columns will automatically stack.</p>
       <div class="row">
-        <div class="col-md-4">.col-md-4</div>
-        <div class="col-md-4">.col-md-4</div>
-        <div class="col-md-4">.col-md-4</div>
+        <div class="col-md-3 col-xs-0 col-sm-6">.col-md-4</div>
+        <div class="col-md-9 col-xs-12 col-sm-6">
+            Video Library Lorem Ipsum Shite
+            <div class="row">
+                <div class="col-md-4">.col-md-4</div>
+                <div class="col-md-4">.col-md-4</div>
+                <div class="col-md-4">.col-md-4</div>
+
+                </div>
+
+        </div>
+
       </div>
 
       <h3>Three unequal columns</h3>
