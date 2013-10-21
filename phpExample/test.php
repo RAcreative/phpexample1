@@ -21,6 +21,9 @@
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
 
+    <!-- Bootstrap theme CSS -->
+    <link href="css/bootstrap-theme.css" rel="stylesheet">
+
     <!-- Custom styles for this template -->
     <link href="css/grid.css" rel="stylesheet">
 

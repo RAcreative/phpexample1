@@ -27,70 +27,71 @@
 <div class="navbar navbar-default">
     <div class="mobileheaderspace visible-xs visible-sm"></div>
     <div class="container">
-        <div class="col-xs-3 col-sm-2">
-            <a href="/"><img class="img-responsive" src="images/logo.png" /></a>
-        </div>
-        <div class="col-xs-9 col-sm-7 col-md-8 headerdivide">
-            <div class="headersearch hidden-xs hidden-print">
-                <div class="row">
-                    <div class="col-sm-8 col-md-6 col-lg-5 pull-right">
-                        <div class="input-group input-group-sm">
-                            <input type="text" class="form-control" maxlength="60" placeholder="Search" />
-                            <span class="input-group-btn">
-                                <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
-                            </span>
+        <div class="row">
+            <div class="col-xs-3 col-sm-2">
+                <a href="/"><img class="img-responsive" src="images/logo.png" /></a>
+            </div>
+            <div class="col-xs-9 col-sm-7 col-md-8 headerdivide">
+                <div class="headersearch hidden-xs hidden-print">
+                    <div class="row">
+                        <div class="col-sm-8 col-md-6 col-lg-5 pull-right">
+                            <div class="input-group input-group-sm">
+                                <input id="headersearch" type="text" class="form-control" maxlength="60" placeholder="Search" />
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                                </span>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="btn-toolbar hidden-sm hidden-md hidden-lg hidden-print">
-                <div class="btn-group pull-right">
-                    <button type="button" class="btn btn-sm btn-default navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
+                <div class="btn-toolbar hidden-sm hidden-md hidden-lg hidden-print">
+                    <div class="btn-group pull-right">
+                        <button type="button" class="btn btn-sm btn-default navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="btn-group pull-right">
+                        <button type="button" class="btn btn-default" onclick="showHeaderSearch();">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </button>
+                        <button type="button" class="btn btn-default" onclick="showCountryList();">
+                            <span class="glyphicon glyphicon-globe"></span>
+                        </button>
+                        <button type="button" class="btn btn-default">
+                            <span class="glyphicon glyphicon-user" onclick="document.location.href='/membership/sign-in';"></span>
+                        </button>
+                    </div>
                 </div>
-                <div class="btn-group pull-right">
-                    <button type="button" class="btn btn-default" onclick="showHeaderSearch();">
-                        <span class="glyphicon glyphicon-search"></span>
-                    </button>
-                    <button type="button" class="btn btn-default" onclick="showCountryList();">
-                        <span class="glyphicon glyphicon-globe"></span>
-                    </button>
-                    <button type="button" class="btn btn-default">
-                        <span class="glyphicon glyphicon-user" onclick="document.location.href='/membership/sign-in';"></span>
-                    </button>
-                </div>
+
+                <div class="navcontainer hidden-xs hidden-sm">
+                    <ul class="nav nav-justified">
+                        <li class="active"><a href="/">Home</a></li>
+                        <li class="dropdown">
+                            <a href="/myths-and-facts" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">Myths &amp; Facts</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Myth 1</a></li>
+                                <li><a href="#">Myth 2</a></li>
+                                <li><a href="#">Fact 1</a></li>
+                                <li><a href="#">Fact 2</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/membership">Membership</a></li>
+                        <li><a href="/resources">Resources</a></li>
+                        <li><a href="/contact-us">Contact Us</a></li>
+                        <li><a href="/news">News</a></li>
+                        <li><a href="/shop">Shop</a></li>
+                    </ul>
+                </div><!--/.nav-collapse -->
             </div>
-
-            <div class="navcontainer hidden-xs hidden-sm">
-                <ul class="nav nav-justified">
-                    <li class="active"><a href="/">Home</a></li>
-                    <li class="dropdown">
-                        <a href="/myths-and-facts" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">Myths &amp; Facts</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Myth 1</a></li>
-                            <li><a href="#">Myth 2</a></li>
-                            <li><a href="#">Fact 1</a></li>
-                            <li><a href="#">Fact 2</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="/membership">Membership</a></li>
-                    <li><a href="/resources">Resources</a></li>
-                    <li><a href="/contact-us">Contact Us</a></li>
-                    <li><a href="/news">News</a></li>
-                    <li><a href="/shop">Shop</a></li>
-                </ul>
-            </div><!--/.nav-collapse -->
+            <div class="col-sm-3 col-md-2 hidden-xs headerlinks">
+                Select Country <img class="currentcountryflag" src="images/ukflag.png" />
+                <br />
+                <a href="/membership/sign-in">Sign In</a><strong> or </strong><a href="/membership/register">Register</a>
+            </div>
         </div>
-        <div class="col-sm-3 col-md-2 hidden-xs headerlinks">
-            Select Country <img class="currentcountryflag" src="images/ukflag.png" />
-            <br />
-            <a href="/membership/sign-in">Sign In</a><strong> or </strong><a href="/membership/register">Register</a>
-        </div>
-
     </div>
 
     <div class="container hidden-md hidden-lg hidden-print">
@@ -185,7 +186,6 @@
             </div>
             <div class="clearfix"></div>
             <br />
-            <br />
             <p>
                 Curabitur ac aliquam lorem, eget iaculis Curabitur ac aliquam lorem, eget iaculis erat. Integer lacinia tempor lectus eu iaculis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam nec molestie lacus, vel mattis felis. Mauris vestibulum mauris quis elit mattis, eget mollis orci pellentesque. Nulla facilisi. Sed vestibulum tellus sem, nec imperdiet eros rutrum vitae.
             </p>
@@ -219,6 +219,81 @@
     </div>
 
 </div><!-- /container -->
+
+<div class="socialfooter">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-5 col-md-4 col-lg-4 pull-left dark">
+                <label for="subscribeemail"><strong>Stay up to date with all our latest news, media and content</strong></label>
+                <div class="input-group">
+                    <input id="subscribeemail" type="text" class="form-control" maxlength="120" placeholder="Email Address" />
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">Sign Up</button>
+                    </span>
+                </div>
+            </div>
+            <div class="col-sm-5 col-md-4 col-lg-4 pull-right sociallinks">
+                <a class="rss" href="/rss" target="_blank">&nbsp;</a>
+                <a class="youtube" href="http://youtube.com" target="_blank">&nbsp;</a>
+                <a class="linkedin" href="http://linkedin.com" target="_blank">&nbsp;</a>
+                <a class="twitter" href="http://twitter.com" target="_blank">&nbsp;</a>
+                <a class="facebook" href="http://facebook.com" target="_blank">&nbsp;</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <div class="container">
+        <div class="row links light">
+            <div class="col-sm-6 col-md-3 col-lg-3 column">
+                <strong>Two Sides Information</strong>
+                <a href="/introduction">Introduction</a>
+                <a href="/organisation">Organisation</a>
+                <a href="/background">Background</a>
+                <a href="/two-sides-structure">Two Sides Structure</a>
+                <a href="/the-board">The Board</a>
+                <a href="/two-sides-principles">Two Sides Principles</a>
+                <a href="/key-contacts">Key Contacts</a>
+            </div>
+            <div class="col-sm-6 col-md-3 col-lg-3 column">
+                <strong>Myths &amp; Facts</strong>
+                <a href="/myths-and-facts/#">Making Paper Always Destroys Forests</a>
+                <a href="/myths-and-facts/#">Plantation Is Bad For The Environment</a>
+                <a href="/myths-and-facts/#">Making Paper Uses A Lot Of Non-Ren...</a>
+                <a href="/myths-and-facts/#">Only Recycled Paper Should Be Used</a>
+                <a href="/myths-and-facts/#">Print And Paper is A Wasteful Product</a>
+                <a href="/myths-and-facts/#">Electronic Communication Is More En...</a>
+                <a href="/myths-and-facts/#">Create Your Own Myths And Facts</a>
+            </div>
+            <div class="col-sm-6 col-md-3 col-lg-3 column">
+                <strong>Membership</strong>
+                <a href="/membership/#">Joining Two Sides Print Power</a>
+                <a href="/membership/#">Who Are The Members?</a>
+                <a href="/membership/#">Member Benefits</a>
+                <a href="/membership/#">What Does It Cost?</a>
+                <a href="/membership/#">Commercial Member</a>
+                <a href="/membership/#">Representative Member</a>
+                <a href="/membership/#">Privacy Policy</a>
+            </div>
+            <div class="col-sm-6 col-md-3 col-lg-3 column">
+                <strong>Resources</strong>
+                <a href="/case-studies">Case Studies</a>
+                <a href="/get-the-facts">Get The Facts</a>
+                <a href="/reports-and-studies">Reports And Studies</a>
+                <a href="/recycling">Recycling</a>
+                <a href="/news">News</a>
+                <a href="/events">Events</a>
+                <a href="/blog">Blog</a>
+            </div>
+        </div>
+        <div class="row light">
+            <p class="col-xs-12 text-left contactinfo">
+                <strong><em>T</em> +44 (0)1327 262920 <em>/ E</em> <a href="mailto:info@twosides.info">info@twosides.info</a></strong>
+            </p>
+        </div>
+    </div>
+</div>
 
 
 <!-- Bootstrap core JavaScript
