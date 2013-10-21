@@ -155,6 +155,7 @@
 .navbar {
     background: transparent none;
     border: none transparent;
+    margin-bottom: 0;
 }
 
 .navbar .navbar-nav > .active > a {
@@ -434,6 +435,7 @@ a.nounderline {
 }
 
 .nav > li > a {
+    height: 70px;
     padding: 10px 5px;
 }
 
@@ -443,9 +445,26 @@ a.nounderline {
 }
 
 .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
-    background-color: rgba(0, 0, 0, 0);
+    background: url("../images/navarrow.png") no-repeat scroll center bottom rgba(0, 0, 0, 0);
     border-color: rgba(0, 0, 0, 0);
     color: #222222;
+}
+
+.dropdown-menu {
+    border-radius: 0px 0px 0px 0px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.176);
+    left: 15px;
+    top: 98%;
+    width: 97.5%;
+}
+
+.notrelative
+{
+    position: static !important;
+}
+.isrelative
+{
+    position: relative !important;
 }
 
 .headersearch {
@@ -709,6 +728,10 @@ a.nounderline {
     h6, .h6 {
         font-size: 10px;
     }
+    .nav > li > a {
+        height: auto;
+        padding: 6px 3px;
+    }
     .carousel-inner .item .container .left {
         left: 50px;
         line-height: 1.3em;
@@ -767,6 +790,10 @@ a.nounderline {
     }
     h6, .h6 {
         font-size: 12px;
+    }
+    .nav > li > a {
+        height: auto;
+        padding: 6px 3px;
     }
     .headerlinks {
         line-height: 1.5em;
