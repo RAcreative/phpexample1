@@ -566,7 +566,7 @@ a.nounderline {
     float: right;
     z-index: 5;
     position: absolute;
-    right: 0px;
+    right: 2%;
     bottom: 0px;
     max-width: 100%;
 }
